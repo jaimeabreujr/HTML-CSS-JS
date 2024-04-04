@@ -1,0 +1,1 @@
+Site para estudo. Exercício proposto no Curso CSS da DEVMEDIA. Porém pode ter modificações

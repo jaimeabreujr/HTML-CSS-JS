@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Cartela de Bingo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .cartela {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .numero {
+            width: 80px;
+            height: 80px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid #000;
+            display: inline-block;
+            margin: 5px;
+            line-height: 80px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .selecionado {
+            background-color: #337ab7;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Cartela de Bingo</h2>
+        <div class="cartela">
+            <!-- Linha 1 -->
+            <div class="numero">1</div>
+            <div class="numero">2</div>
+            <div class="numero">3</div>
+            <div class="numero">4</div>
+            <div class="numero">5</div>
+
+            <!-- Linha 2 -->
+            <div class="numero">6</div>
+            <div class="numero">7</div>
+            <div class="numero">8</div>
+            <div class="numero">9</div>
+            <div class="numero">10</div>
+
+            <!-- Linha 3 -->
+            <div class="numero">11</div>
+            <div class="numero">12</div>
+            <div class="numero">13</div>
+            <div class="numero">14</div>
+            <div class="numero">15</div>
+        </div>
+    </div>
+
+    <script>
+        // Adiciona/remova a classe "selecionado" quando um número é clicado
+        document.querySelectorAll('.numero').forEach(function(numero) {
+            numero.addEventListener('click', function() {
+                this.classList.toggle('selecionado');
+            });
+        });
+    </script>
+</body>
+</html>
